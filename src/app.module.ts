@@ -1,7 +1,10 @@
 import { Module } from '@nestjs/common';
-import { UsersModule } from './users/users.module';
+import { MoviesModule } from './movies/movies.module'; // 仮定のモジュールパス
 
 @Module({
-  imports: [UsersModule],
+  imports: [MoviesModule], // MoviesModuleをインポート
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
+``;
